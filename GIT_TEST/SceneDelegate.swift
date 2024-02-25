@@ -7,6 +7,12 @@
 
 import UIKit
 
+ 
+class NEW:UIViewController{
+    
+}
+
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
