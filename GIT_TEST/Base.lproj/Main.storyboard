@@ -75,17 +75,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vWP-hV-bM5">
-                                <rect key="frame" x="0.0" y="61" width="393" height="755"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ask-uq-YoZ">
+                                <rect key="frame" x="131.66666666666666" y="351" width="129.99999999999997" height="150"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mzr-GY-Wqx">
+                                        <rect key="frame" x="-2" y="0.0" width="134" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vly-4S-XHc">
+                                        <rect key="frame" x="-2" y="30" width="134" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-Cz-qOq">
+                                        <rect key="frame" x="-2" y="60" width="134" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vJY-vv-bdp">
+                                        <rect key="frame" x="-2" y="90" width="134" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VwD-3U-RCV">
+                                        <rect key="frame" x="-2" y="120" width="134" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="9U7-Mt-DEk"/>
+                                    <constraint firstAttribute="height" constant="150" id="aED-Ns-taw"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="28n-He-xfn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vWP-hV-bM5" firstAttribute="top" secondItem="28n-He-xfn" secondAttribute="top" id="AOF-TG-WAp"/>
-                            <constraint firstItem="28n-He-xfn" firstAttribute="bottom" secondItem="vWP-hV-bM5" secondAttribute="bottom" id="iR9-oF-MFV"/>
-                            <constraint firstItem="28n-He-xfn" firstAttribute="trailing" secondItem="vWP-hV-bM5" secondAttribute="trailing" id="siz-JH-LeO"/>
-                            <constraint firstItem="vWP-hV-bM5" firstAttribute="leading" secondItem="28n-He-xfn" secondAttribute="leading" id="uGC-dz-wk3"/>
+                            <constraint firstItem="ask-uq-YoZ" firstAttribute="centerX" secondItem="d9W-xH-9Wg" secondAttribute="centerX" id="Tij-Yc-Mh8"/>
+                            <constraint firstItem="ask-uq-YoZ" firstAttribute="centerY" secondItem="d9W-xH-9Wg" secondAttribute="centerY" id="b3d-Zx-cBf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -95,7 +114,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
